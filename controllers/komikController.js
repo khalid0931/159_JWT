@@ -30,7 +30,7 @@ async function createKomik(req, res) {
         const newKomik = await db.Komik.create({ title, description, author });
         res.status(201).json(newKomik);
     } catch (error) {
-        console.error('Error creating komik:', error.massage);
+        console.error('Error creating komik:', error.message);
         res.status(500).json({ error: 'An error occurred while creating komik.' });
     }
 }

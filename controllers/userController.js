@@ -61,7 +61,7 @@ async function login(req, res) {
 
         if (!user) {
             return res.status(401).json({
-                message: "Email atau passwors salah"
+                message: "Email atau password salah"
             });
         }
 
